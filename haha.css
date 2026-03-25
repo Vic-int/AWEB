@@ -1,0 +1,24 @@
+
+body {
+    min-height: 500vh; /*para poder hacer scroll y ver el efecto*/
+    background-image: url("../ing/nelson.gif"), url("../ing/miedo.png"); /*dos imágenes de fondo*/
+    background-repeat: no-repeat, repeat; /*nelson no se repite, miedo se repite*/
+    background-attachment: fixed, scroll; /*nelson está fijo en medio, miedo hace scroll*/
+    background-size: 498px, 100px; /*nelson grande, miedo pequeño*/
+    background-position: center, center; /*ambas imágenes centradas*/
+    background-color: black; /*fondo negro*/
+}
+
+.adios {
+    position: fixed;
+    top: 1px;
+    right: 1px;
+    width: 200px;
+    height: 200px;
+    z-index: 1; /*delante de los demnas, para poder hacer click*/
+}
+
+.adios:hover { 
+    transform: scale(2); 
+}
+
